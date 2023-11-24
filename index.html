@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleIndex.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat+Alternates&family=Raleway:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img src="logoHeaderCURF.png" alt="Logo" class="logo">
+        <h1>Clínica Universitaria Reina Fabiola</h1>
+        <h2><i>- Consulta de Convenios -</i></h2>
+    </div>
+    <div class="nav">
+        <div class="nav-item hvr-underline-from-center">
+            <a href="index.html">Inicio</a>
+        </div>
+        <div class="nav-item hvr-underline-from-center">
+            <a href="https://curf.atlassian.net/servicedesk/customer/portal/1" target="_blank">Soporte Sistemas</a>
+        </div>    
+        <div class="nav-item hvr-underline-from-center">
+            <a href="login.html">Cerrar Sesión</a>
+        </div>  
+    </div>
+    
+    
+    <div class="main">
+        <div class="sidebar">
+            <h3><i>Listado 2023</i></h3>
+            <ul>
+
+                <div class="busqueda">
+                    <div class="search-container" id="searchContainer">
+                        
+                        <input type="text" id="searchInput" oninput="buscarConvenio()" placeholder="Ingrese convenio..." autocomplete="off">
+                    </div>
+                </div>
+                
+
+                <li id="convenio1" onclick="mostrarConvenio(1)" class="hvr-shutter-out-horizontal">OSDE</li>
+                <li id="convenio2" onclick="mostrarConvenio(2)" class="hvr-shutter-out-horizontal">Swiss Medical</li>
+                <li id="convenio3" onclick="mostrarConvenio(3)" class="hvr-shutter-out-horizontal">Medicus</li>
+                <li id="convenio4" onclick="mostrarConvenio(4)" class="hvr-shutter-out-horizontal">Sancor Salud</li>
+                <li id="convenio5" onclick="mostrarConvenio(5)" class="hvr-shutter-out-horizontal">Galeno</li>
+                <li id="convenio6" onclick="mostrarConvenio(6)" class="hvr-shutter-out-horizontal">OSPA</li>
+                <li id="convenio7" onclick="mostrarConvenio(7)" class="hvr-shutter-out-horizontal">OSECAC</li>
+                <li id="convenio8" onclick="mostrarConvenio(8)" class="hvr-shutter-out-horizontal">DASPU</li>
+            </ul> 
+        </div>
+        <!-- <div class="content" id="content">
+            <h2>Bienvenida/o a la página web de Consultas de Convenios</h2>
+            <p>En esta página web podrás consultar los convenios de obras sociales sobre coberturas, requisitos, planes, etc. para que el usuario final visualice toda la información.</p>
+            <p>Para ver la información de un convenio, haz clic en el nombre del convenio en la barra lateral izquierda.</p>      
+        </div>     -->
+
+
+
+        <div class="content" id="content" style="width: 75%; padding: 10px;">
+            <h2 style="color: rgb(0, 40, 86); text-align: center;">Bienvenida/o a la página web de Consultas de Convenios</h2>
+            <h3 style="text-align: center;">La mejor forma de informarte sobre las obras sociales</h3>
+            <p style="text-align: justify;">En esta página web podrás:</p>
+            <ul style="list-style: none; padding: 0;margin-bottom: 40px;">
+              <li style="padding: 5px; border-bottom: 1px solid #cccccc;">- Consultar los convenios de más de 50 obras sociales.</li>
+              <li style="padding: 5px; border-bottom: 1px solid #cccccc;">- Comparar las coberturas, los requisitos y los planes de cada obra social.</li>
+              <li style="padding: 5px; border-bottom: 1px solid #cccccc;">- Acceder a la información actualizada y verificada por la Clínica Universitaria Reina Fabiola.</li>
+            </ul>
+            <p style="text-align: justify;">Para ver la información de un convenio, haz clic en el nombre del mismo en la barra lateral izquierda.</p>
+            <!-- <button style="display: block; margin: 10px auto; padding: 10px; background-color: #0099cc; color: white; border: none; cursor: pointer;">Iniciar sesión</button> -->
+            <i><a href="#" style="display: block; margin: 10px auto; color: black; text-decoration: none;">Ver más información</a></i>
+        </div>
+          
+    </div>      
+    <div class="footer">
+        <!-- <button id="editarBtn" onclick="editarConvenio()">Editar</button>
+        <button id="agregarBtn" onclick="agregarConvenio()">Agregar Convenio</button> -->
+        <p>Todos los derechos reservados © 2023</p>
+    </div>

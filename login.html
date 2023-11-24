@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styleLogin.css">
+</head>
+<body>
+    <div class="login">
+        <img src="logoCURF.png" alt="Logo">
+        <input type="text" id="username" placeholder="USUARIO">
+        <input type="password" id="password" placeholder="CONTRASEÑA">
+        <button onclick="login()">Iniciar sesión</button>
+        <a href="https://curf.atlassian.net/servicedesk/customer/portal/1/group/22/create/60">¿Olvidó su contraseña?</a>
+    </div>
+    <script>
+        // Código JavaScript para la página de inicio de sesión
+        function login() {
+            var username = document.getElementById("username").value; // Se obtiene el valor del nombre de usuario
+            var password = document.getElementById("password").value; // Se obtiene el valor de la contraseña
+            // Aquí puedes verificar el nombre de usuario y la contraseña con tu base de datos de usuarios
+            if ((username == "convenios" && password == "convenios") || 
+                (username == "secretariado" && password == "secretariado") || 
+                (username == "facturacion" && password == "facturacion") || 
+                (username == "centrodecontacto" && password == "centrodecontacto")) {
+                // Si el nombre de usuario y la contraseña son iguales y corresponden a uno de los roles, se permite el acceso
+                window.location.href = "index.html"; // Redirige al usuario a la página principal
+            } else {
+                // Si el nombre de usuario y la contraseña no son iguales o no corresponden a ninguno de los roles, se muestra un mensaje de error
+                alert("Nombre de usuario o contraseña incorrectos");
+            }
+        }
+    </script>
+</body>
+</html>
